@@ -9,6 +9,7 @@ namespace ExampleMod.Buffs
 		public override void SetDefaults() {
 			DisplayName.SetDefault("Weapon Imbue: Ethereal Flames");
 			Description.SetDefault("Melee attacks Inflict ethereal flames");
+			Main.meleeBuff[buff.type] = true;
 		}
 
 		public override void Update(Player player, ref int buffIndex) {
